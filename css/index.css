@@ -1,0 +1,125 @@
+.cabecera {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}
+.title-cabecera {
+    font-size: 32px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.logo-cabecera {
+    width: 25%;
+}
+.options-cabecera {
+    width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.nav-item {
+    width: 10%;
+    text-align: center;
+}
+.nav-link {
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.sig-red-soc {
+    width: 25%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.siguenos-text {
+    font-size: 16px;
+}
+.link-rs {
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+}
+.redes-sociales {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+footer {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    text-align: center;
+    color: black;
+}
+.footer-div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-logo {
+    height: 32px;
+    margin: 5px;
+}
+.contactos-div {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.patrocinios-div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.imagen-carta {
+    height: 200px;
+}
+.destinos-w {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("../resources/img/fondo_b.jpg");
+    background-repeat: no-repeat;
+    background-color: #cccccc;
+}
+.oculto {
+    display: none;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.marcado {
+    font-size: 24px;
+    color: blue;
+}
+.modal-dialog {
+    max-width: 800px;
+    margin: 30px auto;
+}
+.modal-body {
+position:relative;
+padding:0px;
+}
+.close {
+position:absolute;
+right:-30px;
+top:0;
+z-index:999;
+font-size:2rem;
+font-weight: normal;
+color:#fff;
+opacity:1;
+}
