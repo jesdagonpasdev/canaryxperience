@@ -181,3 +181,24 @@ opacity:1;
 .lista-excursiones {
     width: 80%;
 }
+.formulario-div {
+    margin: 20px;
+}
+.formulario {
+    width: 100%;
+}
+.paramenos{
+    margin-bottom: 6%;
+}
+.pek {
+    width: 75px;
+}
+.caducidad {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.paramas {
+    margin-bottom: 13%;
+}

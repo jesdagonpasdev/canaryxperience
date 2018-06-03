@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
         crossorigin="anonymous">
+    <link rel="icon" href="resources/img/logo_cx.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
@@ -37,7 +38,7 @@
                     <font>
                         <i class="fas fa-bus"></i> Excursiones</font>
                 </a>
-                <a class="nav-link reservar">
+                <a class="nav-link reservas">
                     <font>
                         <i class="fas fa-ticket-alt"></i> Reservar</font>
                 </a>
@@ -108,11 +109,11 @@
                 </div>
             </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#home" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#home" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
@@ -363,7 +364,7 @@
                                         </button>
                                     </h5>
                                     <h5 class="precio-tag">
-                                        <b>50 €</b> / persona
+                                        <b>47 €</b> / persona
                                     </h5>
                                 </div>
                                 <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordion">
@@ -410,7 +411,7 @@
                                         </button>
                                     </h5>
                                     <h5 class="precio-tag">
-                                        <b>50 €</b> / persona
+                                        <b>79 €</b> / persona
                                     </h5>
                                 </div>
                                 <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordion">
@@ -450,7 +451,7 @@
                                         </button>
                                     </h5>
                                     <h5 class="precio-tag">
-                                        <b>50 €</b> / persona
+                                        <b>64 €</b> / persona
                                     </h5>
                                 </div>
                                 <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordion">
@@ -493,7 +494,7 @@
                                         </button>
                                     </h5>
                                     <h5 class="precio-tag">
-                                        <b>50 €</b> / persona
+                                        <b>39 €</b> / persona
                                     </h5>
                                 </div>
                                 <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordion">
@@ -543,7 +544,7 @@
                                         </button>
                                     </h5>
                                     <h5 class="precio-tag">
-                                        <b>50 €</b> / persona
+                                        <b>39 €</b> / persona
                                     </h5>
                                 </div>
                                 <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordion">
@@ -588,7 +589,7 @@
                                         </button>
                                     </h5>
                                     <h5 class="precio-tag">
-                                        <b>50 €</b> / persona
+                                        <b>39 €</b> / persona
                                     </h5>
                                 </div>
                                 <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordion">
@@ -623,6 +624,165 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div id="reservas" class="oculto">
+        <div id="para-reservar" class="card formulario-div">
+            <div class="card-header">
+                <b>RESERVA TU EXCURSIÓN</b>
+            </div>
+            <div class="card-body">
+                <form class="formulario">
+                    <div class="form-row">
+                        <div class="form-group col-md-5">
+                            <label for="destino">
+                                <b>Destino:</b>
+                            </label>
+                            <select id="type" class="form-control">
+                                <option value="">-- Selecciona el destino -- </option>
+                                <option value="d_gc"> Gran Canaria </option>
+                                <option value="d_t"> Tenerife </option>
+                                <option value="d_f"> Fuerteventura </option>
+                                <option value="d_l"> Lanzarote </option>
+                                <option value="d_g"> La Gomera </option>
+                                <option value="d_p"> La Palma </option>
+                                <option value="d_h"> El Hierro </option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-5">
+                            <label for="excursion-form">
+                                <b>Excursión:</b>
+                            </label>
+                            <select id="size" class="form-control">
+                                <option value="">-- Selecciona la excursión -- </option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="datetime-form">
+                                <b>Día de reserva:</b>
+                            </label>
+                            <input class="form-control" type="datetime-local" id="datetime-form">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-1">
+                            <label for="adultos">
+                                <b>Adultos
+                                    <br>(26-65 años):</b>
+                            </label>
+                            <input id="adultos" type="number" class="form-control" value="0">
+                        </div>
+                        <div class="form-group col-md-1">
+                            <label for="ninos">
+                                <b>Niños
+                                    <br>(
+                                    < 12 años):</b>
+                            </label>
+                            <input id="ninos" type="number" class="form-control" value="0">
+                        </div>
+                        <div class="form-group col-md-1">
+                            <label for="mayores">
+                                <b>Mayores
+                                    <br>(> 65 años):</b>
+                            </label>
+                            <input id="mayores" type="number" class="form-control" value="0">
+                        </div>
+                        <div class="form-group col-md-1">
+                            <label for="jovenes">
+                                <b>Jovenes
+                                    <br>(
+                                    < 26 años):</b>
+                            </label>
+                            <input id="jovenes" type="number" class="form-control" value="0">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                            <label for="nombre">
+                                <b>Nombre:</b>
+                            </label>
+                            <input id="nombre" type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="apellidos">
+                                <b>Apellidos:</b>
+                            </label>
+                            <input id="apellidos" type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="dni">
+                                <b>DNI:</b>
+                            </label>
+                            <input id="dni" type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="email">
+                                <b>Email:</b>
+                            </label>
+                            <input id="email" type="email" class="form-control" required>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer text-muted text-center">
+                <button class="btn btn-primary pago">REALIZAR PAGO</button>
+            </div>
+        </div>
+        <div id="para-pagar" class="card formulario-div oculto">
+            <div class="card-header">
+                <b>PASARELA DE PAGO</b>
+            </div>
+            <div class="card-body">
+                <form class="formulario">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="numtarjeta">
+                                <b>Número de tarjeta:</b>
+                            </label>
+                            <input id="numtarjeta" type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="mes-cad">
+                                <b>Caducidad:</b>
+                            </label>
+                            <div class="caducidad">
+                                <input type="text" class="form-control pek" placeholder="mm">
+                                <p> /   </p>
+                                <input type="text" class="form-control pek" placeholder="yy">
+                            </div>                            
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="destino">
+                                <b>Num. Seguridad:</b>
+                            </label>
+                            <input type="text" class="form-control pek" placeholder="nnn">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="titular">
+                                <b>Titular de la tarjeta:</b>
+                            </label>
+                            <input id="titular" type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="email-tit">
+                                <b>Email:</b>
+                            </label>
+                            <input id="email-tit" type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="telefono">
+                                <b>Teléfono:</b>
+                            </label>
+                            <input id="telefono" type="text" class="form-control">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer text-muted text-center">
+                <button class="btn btn-success pago-realizado">PAGAR Y TERMINAR</button>
             </div>
         </div>
     </div>
