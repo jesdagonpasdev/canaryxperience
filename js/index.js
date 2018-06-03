@@ -45,6 +45,19 @@ $(document).ready(function () {
         $('.reservas > font').addClass('marcado');
         marcadoActual = $('.reservas > font');
         windowActual = $('#reservas');
+        $("#para-reservar").removeClass('oculto');
+        $("#para-pagar").addClass('oculto');
+    });
+
+    $('.conocenos').click(function () {
+        windowActual.removeClass();
+        windowActual.addClass('oculto');
+        marcadoActual.removeClass('marcado');
+        $('#conocenos').removeClass();
+        $('#conocenos').addClass('carousel slide');
+        $('.conocenos > font').addClass('marcado');
+        marcadoActual = $('.conocenos > font');
+        windowActual = $('#conocenos');
     });
 
     $("#type").change(function () {
@@ -67,11 +80,10 @@ $(document).ready(function () {
     });
 
     $(".pago").click(function () {
-            $("#para-reservar").addClass('oculto');
-            $("#para-pagar").removeClass('oculto');
-            $(this).text('PAGAR');
-            estadoBoton = "pr";
-            $("#reservas").addClass('paramas');
+        $("#para-reservar").addClass('oculto');
+        $("#para-pagar").removeClass('oculto');
+        estadoBoton = "pr";
+        $("#reservas").addClass('paramas');
     });
 
     var $videoSrc;

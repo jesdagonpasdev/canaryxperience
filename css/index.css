@@ -202,3 +202,19 @@ opacity:1;
 .paramas {
     margin-bottom: 13%;
 }
+#conocenos {
+    margin: 20px;
+}
+p {
+    text-align: justify;
+}
+.pro-info {
+    width: 70%;
+    margin-left: 50px;
+}
+.promot {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
