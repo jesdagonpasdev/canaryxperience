@@ -123,3 +123,61 @@ font-weight: normal;
 color:#fff;
 opacity:1;
 }
+#excuriones {
+    margin-left: 20px;
+}
+.card-body {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.img-excur {
+    width: 25%;
+}
+.titulos-pestanas {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+.titulos-pestanas-p {
+    margin-right: 30px;
+}
+.text-part {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 70%;
+}
+.precio-tag {
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    padding-top: 5px;
+}
+.container-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: auto;
+}
+.lista-islas {
+    width: 15%;
+}
+.lista-excursiones {
+    width: 80%;
+}

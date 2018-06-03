@@ -24,66 +24,28 @@ $(document).ready(function () {
         windowActual = $('#home');
     });
 
-
-    //
-    /*var url = $("#cartoonVideo").attr('src');
-    var tituloModal = $('.modal-title');
-
-    Assign empty url value to the iframe src attribute when
-    modal hide, which stop the video playing 
-    $("#myModal").on('hide.bs.modal', function () {
-        $("#cartoonVideo").attr('src', '');
+    $('.excursiones').click(function () {
+        windowActual.removeClass();
+        windowActual.addClass('oculto');
+        marcadoActual.removeClass('marcado');
+        $('#excursiones').removeClass();
+        $('#excursiones').addClass('carousel slide');
+        $('.excursiones > font').addClass('marcado');
+        marcadoActual = $('.excursiones > font');
+        windowActual = $('#excursiones');
     });
 
-    /* Assign the initially stored url back to the iframe src
-    attribute when modal is displayed again 
-    $("#myModal").on('show.bs.modal', function () {
-        let idClick = $(this).attr('id');
-        console.log(idClick);
-        let titulo = "";
-
-        switch (idClick) {
-            case 'video-tenerife':
-                url = "//www.youtube.com/watch?v=kwlFC6thEZU";
-                titulo = "Tenerife";
-                break;
-            case 'video-gomera':
-                url = "//www.youtube.com/watch?v=YwGHmiEM1ro";
-                titulo = "La Gomera";
-                break;
-            case 'video-palma':
-                url = "//www.youtube.com/watch?v=nhAdmuJqYZ8";
-                titulo = "La Palma";
-                break;
-            case 'video-hierro':
-                url = "//www.youtube.com/watch?v=1DlgGEqGyTg";
-                titulo = "El Hierro";
-                break;
-            case 'video-grancanaria':
-                url = "//www.youtube.com/watch?v=vPm91BmbfmU";
-                titulo = "Gran Canaria";
-                break;
-            case 'video-lanzarote':
-                url = "//www.youtube.com/watch?v=kdUaMvpweYc";
-                titulo = "Lanzarote";
-                break;
-            case 'video-fuerteventura':
-                url = "//www.youtube.com/watch?v=LFZ7425Th6U";
-                titulo = "Fuerteventura";
-                break;
-        }
-
-        $("#cartoonVideo").attr('src', url);
-        tituloModal.text(titulo);
-    });
-*/
     var $videoSrc;
+
     $('.video-btn').click(function () {
         $videoSrc = $(this).data("src");
     });
     console.log($videoSrc);
 
-
+    $('#myList a').on('click', function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+    });
 
     // when the modal is opened autoplay it  
     $('#myModal').on('shown.bs.modal', function (e) {
